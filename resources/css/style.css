@@ -1,3 +1,153 @@
+/* Font-faces */
+
+@font-face {
+  font-family: 'Khand';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Khand Regular'), local('Khand-Regular'), url(https://fonts.gstatic.com/s/khand/v5/jE6debCT41WQse1Htsii-w.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+	@font-face {
+  font-family: 'Khand';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Khand SemiBold'), local('Khand-SemiBold'), url(https://fonts.gstatic.com/s/khand/v5/vr6ZNJpXN-WXcTknMA_7TPesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* Global */
+
 body {
-	
+	color: #061839;
+	font-size: 16px;
+	font-family: 'Khand', Arial, sans-serif;
+	line-height: 1.4;
+	width: 100%;
+}
+
+/* Headings */
+
+h1, h2 ,h3 {
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 2rem;
+	display: inline;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+/* Nav */
+
+ul li {
+	display: inline-block;
+}
+
+li a {
+	text-decoration: none;
+	color: #061839;
+}
+
+
+/* Spans */
+
+#logo-contrast {
+	color: #7486A9;
+	font-weight: normal;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+/* Containers */
+
+/* Main Container */
+
+.container {
+	max-width: 60%;
+	overflow: hidden;
+	margin-left: 1.5rem;
+}
+
+/* Sidebar Container */
+
+.sidebar {
+	max-width: 40%;
+}
+
+/* Offset for fixed header */
+
+#learn, #info, #courses, #thesis, footer {
+	position: relative;
+	top: 6rem;
+}
+
+/* Image Containers */
+
+.img-container {
+	height: auto;
+	overflow: hidden;
+}
+
+.large {
+	max-width: 100%;
+}
+
+
+.medium {
+	width: 100%;
+}
+
+.small {
+	max-width: 35%;
+}
+
+/* Header */
+
+header {
+	background-color: #ffffff;
+	border-bottom: 1px solid #061839;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 4rem;
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+	margin-bottom: 2rem;
+}
+
+#logo {
+	height: 3rem;
+}
+
+#branding {
+	display: flex;
+	align-items: center;
+	margin-left: 1.5rem;
+}
+
+nav {
+	margin-right: 1.5rem;
+}
+
+nav ul li {
+	margin-left: 1rem;
+	font-size: 1.2rem;
+}
+
+/* Learn Section Styles */
+
+#learn {
+	display: flex;
+	flex-direction: row;
 }
