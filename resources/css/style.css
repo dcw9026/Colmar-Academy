@@ -68,28 +68,40 @@ li a {
 	text-transform: uppercase;
 }
 
+.read-more {
+  color: #102751;
+}
+
 /* Containers */
 
 /* Main Container */
 
-.container {
-	max-width: 60%;
-	overflow: hidden;
-	margin-left: 1.5rem;
+#main-container {
+  display: flex;
+  flex-direction: column;
 }
 
-/* Sidebar Container */
+/* Left Container*/
 
-.sidebar {
+.container-left {
+  width: 60%;
+	overflow: hidden;
+	margin: 0 1.5rem;
+}
+
+/* Right Container */
+
+.container-right {
 	max-width: 40%;
-	margin: auto 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Offset for fixed header */
 
 #learn, #info, #courses, #thesis, footer {
 	position: relative;
-	top: 6rem;
+	top: 4rem;
 }
 
 /* Image Containers */
@@ -110,6 +122,12 @@ li a {
 
 .small {
 	max-width: 35%;
+}
+
+/* Container hides mobile pics for full res display */
+
+.mobile {
+	display: none;
 }
 
 /* Header */
@@ -149,9 +167,12 @@ nav ul li {
 /* Learn Section Styles */
 
 #learn {
+	background-color: #F6F8FD;
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 4rem;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
 }
 
 #learn img {
@@ -159,24 +180,22 @@ nav ul li {
 	height: auto;
 }
 
-#learn .sidebar {
-	display: flex;
-	flex-direction: column;
+#learn .container-right {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
 }
 
-.sidebar p {
+.container-right p {
 	font-size: 1.2rem;
-	margin: 2rem auto;
+	margin: 2rem 1.5rem;
 }
 
 #start-button {
 	color: #F6F8FD;
 	font-size: 1.2rem;
 	background-color: #061839;
-	padding: .5rem 3rem;
+	padding: .5rem 4rem;
 	display: inline-block;
 }
 
@@ -185,9 +204,42 @@ nav ul li {
 #info {
 	display: flex;
 	flex-direction: row;
+  margin-bottom: 4rem;
 }
 
 #info img {
 	max-width: 100%;
 	height: auto;
+}
+
+#info h2 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#info blockquote {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.side-bar-item {
+	display: flex;
+	flex-direction: row;
+  border: 1px solid black;
+  height: 30%;
+  width: 100%;
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+.side-bar-item p {
+  margin: 0;
+}
+
+.side-bar-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  max-width: 65%;
+  margin: 0 0 1rem 1rem;
 }
