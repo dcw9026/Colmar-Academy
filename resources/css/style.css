@@ -89,6 +89,7 @@ li a {
 	width: 40%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 /* Offset for fixed header */
@@ -107,16 +108,10 @@ li a {
 
 /* not needed will keep for now */
 
-.medium {
+/*.medium {
   width: 100%;
   height: auto;
-}
-
-/* blerp */
-
-.large {
-  width: 100%;
-}
+}*/
 
 /* Container hides mobile pics for full res display */
 
@@ -261,6 +256,7 @@ cite {
 
 #courses {
   background-color: #F6F8FD;
+  padding-bottom: 1.5rem;
 }
 
 #courses h2 {
@@ -306,3 +302,48 @@ cite {
 }
 
 /* Thesis section styles */
+
+#thesis {
+  margin-bottom: 2rem;
+}
+
+#thesis h2 {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+#thesis-content {
+  display: flex;
+  flex-direction: row;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+#thesis-content .container-left h3, #thesis-content .container-left p {
+  margin-top: 1.5rem;
+}
+
+/* Footer styles */
+
+footer {
+  background-color: #F6F8FD;
+  border-top: 1px solid #061839;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p {
+  margin-left: 1rem;
+}
+
+footer ul li {
+  margin-right: 1rem;
+}
+
+footer a:hover {
+  color: #7486A9;
+}
