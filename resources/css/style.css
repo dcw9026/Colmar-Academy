@@ -30,6 +30,7 @@ body {
 
 h1, h2 ,h3 {
 	font-weight: bold;
+  display: inline-block;
 }
 
 h1 {
@@ -68,48 +69,59 @@ li a {
 	text-transform: uppercase;
 }
 
-/* Containers */
-
-/* Main Container */
-
-.container {
-	max-width: 60%;
-	overflow: hidden;
-	margin-left: 1.5rem;
+.read-more {
+  color: #102751;
 }
 
-/* Sidebar Container */
+/* Containers */
 
-.sidebar {
-	max-width: 40%;
-	margin: auto 1.5rem;
+/* Left Container*/
+
+.container-left {
+  width: 60%;
+	overflow: hidden;
+	margin: 0 1.5rem;
+}
+
+/* Right Container */
+
+.container-right {
+	width: 40%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Offset for fixed header */
 
 #learn, #info, #courses, #thesis, footer {
 	position: relative;
-	top: 6rem;
+	top: 4rem;
 }
 
-/* Image Containers */
-
-.img-container {
-	height: auto;
-	overflow: hidden;
-}
-
-.large {
-	max-width: 100%;
-}
-
-
-.medium {
-	max-width: 100%;
-}
+/* Image containers */
 
 .small {
-	max-width: 35%;
+  min-width: 35%;
+  padding: 1rem;
+}
+
+/* not needed will keep for now */
+
+.medium {
+  width: 100%;
+  height: auto;
+}
+
+/* blerp */
+
+.large {
+  width: 100%;
+}
+
+/* Container hides mobile pics for full res display */
+
+.mobile {
+	display: none;
 }
 
 /* Header */
@@ -146,48 +158,151 @@ nav ul li {
 	font-size: 1.2rem;
 }
 
+nav a:hover {
+  color: #7486A9;
+}
+
 /* Learn Section Styles */
 
 #learn {
+	background-color: #F6F8FD;
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 4rem;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
 }
 
 #learn img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
 }
 
-#learn .sidebar {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
+#learn .container-right {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.sidebar p {
+#learn .container-right p {
 	font-size: 1.2rem;
-	margin: 2rem auto;
+	margin: 2rem 1.5rem 2rem 0;
 }
 
 #start-button {
-	color: #F6F8FD;
 	font-size: 1.2rem;
 	background-color: #061839;
-	padding: .5rem 3rem;
+	padding: .5rem 4rem;
 	display: inline-block;
+  transition-property: padding;
+  transition-delay: .2s;
+  transition-duration: 1.2s;
+}
+
+#start-button a {
+  color: #F6F8FD;
+  text-decoration: none;
+}
+#start-button:hover {
+  padding: .5rem 12rem;
 }
 
 /* Info section styles */
 
 #info {
-	display: flex;
-	flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 #info img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
 }
+
+#info h2 {
+  margin-top: 2rem;
+}
+
+blockquote {
+  margin: 1.5rem 0;
+}
+
+cite {
+  margin-bottom: 2rem;
+}
+
+.side-bar-item {
+  display: flex;
+  position: relative;
+  bottom: 1rem;
+}
+
+.side-bar-item:hover {
+  background-color: #F6F8FD;
+}
+
+.side-bar-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.side-bar-text {
+  min-width: 60%;
+  align-self: center;
+}
+
+.side-bar-text a{
+  color: #102751;
+}
+
+.side-bar-text h3, .side-bar-text p {
+  margin-bottom: .5rem;
+}
+
+/* Course Gallery Styles */
+
+#courses {
+  background-color: #F6F8FD;
+}
+
+#courses h2 {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+#course-gallery {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 90%;
+}
+
+#row-1, #row-2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.gallery-item {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem 2rem 2rem;
+  padding-bottom: 1.5rem;
+  box-sizing: border-box;
+  transition: padding .3s linear .2s;
+}
+
+.gallery-item:hover {
+  padding: 1rem;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery-item h3, .gallery-item span, .gallery-item p {
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+/* Thesis section styles */

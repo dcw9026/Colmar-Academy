@@ -25,19 +25,19 @@
     </nav>
   </header>
   <section id="learn">
-    <div class="container">
+    <div class="container-left">
       <div class="img-container large">
         <img src="resources/images/banner.jpg" alt="Women Studying">
       </div>
     </div>
-    <div class="sidebar">
+    <div class="container-right">
       <h2>Learn something new everyday</h2>
       <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
-      <span id="start-button">Start here</span>
+      <span id="start-button"><a href="start-here.html">Start here</a></span>
     </div>
   </section>
   <section id="info">
-    <div class="container">
+    <div class="container-left">
       <div class="img-container large">
         <img src="resources/images/information-main.jpg" alt="Man Reading">
       </div>
@@ -45,7 +45,7 @@
       <blockquote>"Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur aliquet quam id dui posuere blandit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."</blockquote>
       <cite>Emanuel, Sr. Strategist at Hiring.com</cite>
     </div>
-    <div class="sidebar">
+    <div class="container-right">
       <div class="side-bar-item">
         <div class="img-container small">
           <img src="resources/images/information-orientation.jpg" alt="Cobblestone Road">
@@ -53,9 +53,11 @@
         <div class="img-container medium">
           <img class="mobile" src="resources/images/information-orientation-mobile.jpg" alt="Cobblestone Road">
         </div>
-        <h3>Orientation date</h3>
-        <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
-        <span class="read-more">Read more</span>
+        <div class="side-bar-text">
+          <h3>Orientation date</h3>
+          <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
+          <span class="read-more"><a href="orientation.html">Read more</a></span>
+        </div>
       </div>
       <div class="side-bar-item">
         <div class="img-container small">
@@ -64,9 +66,11 @@
         <div class="img-container medium">
           <img class="mobile" src="resources/images/information-campus-mobile.jpg" alt="Room With Map">
         </div>
-        <h3>Our campus</h3>
-        <p>Find which campus is close to you</p>
-        <span class="read-more">Read more</span>
+        <div class="side-bar-text">
+          <h3>Our campus</h3>
+          <p>Find which campus is close to you</p>
+          <span class="read-more"><a href="campus.html">Read more</a></span>
+        </div>
       </div>
       <div class="side-bar-item">
         <div class="img-container small">
@@ -75,15 +79,18 @@
         <div class="img-container medium">
           <img class="mobile" src="resources/images/information-guest-lecture-mobile.jpg" alt="Old Man With Glasses">
         </div>
-        <h3>Our guest lecture</h3>
-        <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-        <span class="read-more">Read more</span>
+        <div class="side-bar-text">
+          <h3>Our guest lecture</h3>
+          <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+          <span class="read-more"><a href="guest-lecture.html">Read more</a></span>
+        </div>
       </div>
     </div>
   </section>
   <section id="courses">
     <h2>Start learning</h2>
     <div id="course-gallery">
+      <div id="row-1">
       <div class="gallery-item">
         <div class="img-container medium">
           <img src="resources/images/course-software.jpg" alt="Desktop Computer">
@@ -108,6 +115,8 @@
         <span class="uppercase">Courses</span>
         <p>User Experience Design, User Research, Visual Design</p>
       </div>
+    </div>
+    <div id="row-2">
       <div class="gallery-item">
         <div class="img-container medium">
           <img src="resources/images/course-data.jpg" alt="Laptop Computer">
@@ -131,40 +140,46 @@
         <h3>Marketing</h3>
         <span class="uppercase">Courses</span>
         <p>Analytics, Content Marketing, Mobile Marketing</p>
-      </div>
+    </div>
+  </div>
+  </div>
   </section>
   <section id="thesis">
     <h2>Thesis exhibit</h2>
-    <div class="container">
+    <div class="container-right">
       <div class="img-container large">
         <iframe width="854" height="480" src="https://www.youtube.com/embed/6gvMlNdqPkQ" frameborder="0">Video of NYC Skyline</iframe>
       </div>
       <h3>Reimagine urban</h3>
       <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
-    <div class="sidebar">
-      <div class="gallery-item">
+    <div class="container-left">
+      <div class="side-bar-item">
         <div class="img-container small">
           <img src="resources/images/thesis-fisma.jpg" alt="Person Drawing">
         </div>
-        <h3>Fisma: Design and Prototype</h3>
-        <p>Designer showcase of new prototype product</p>
+        <div class="side-bar-text">
+          <h3>Fisma: Design and Prototype</h3>
+          <p>Designer showcase of new prototype product</p>
+        </div>
       </div>
-      <div class="gallery-item">
+      <div class="side-bar-item">
         <div class="img-container small">
           <img src="resources/images/thesis-now-and-then.jpg" alt="Empire State Building">
         </div>
-        <h3>Now and then</h3>
-        <p>Research study about New York</p>
+        <div class="side-bar-text">
+          <h3>Now and then</h3>
+          <p>Research study about New York</p>
+        </div>
       </div>
   </section>
   <footer>
     <p>&copy; 2016 Colmar Academy. All rights reserved</p>
     <ul>
       <li><a href="terms.html">Terms</a></li>
-      <li><a href="privacy.html">Privacy</li>
-        </ul>
-      </footer>
+      <li><a href="privacy.html">Privacy</a></li>
+    </ul>
+  </footer>
 
 
 
