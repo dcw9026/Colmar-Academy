@@ -111,7 +111,7 @@ li a {
 }
 
 
-/* Container hides mobile pics for full res display */
+/* Class hides mobile elements for full screen display */
 
 .mobile {
   display: none;
@@ -188,7 +188,7 @@ nav a:hover {
   background-color: #061839;
   padding: .5rem 4rem;
   display: inline-block;
-  transition-property: padding;
+  transition-property: padding, font-size;
   transition-delay: .2s;
   transition-duration: 1.2s;
 }
@@ -200,6 +200,7 @@ nav a:hover {
 
 #start-button:hover {
   padding: .5rem 12rem;
+  font-size: 1.5rem;
 }
 
 
@@ -355,4 +356,131 @@ footer ul li {
 
 footer a:hover {
   color: #7486A9;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 520px) {
+
+  /* Hides full-screen elements and displays mobile elements */
+
+  .full-screen {
+    display: none
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .container-left, .container-right {
+    width: 100%;
+    position: relative;
+    bottom: 4rem;
+    margin: 0;
+  }
+
+  /* Header styles */
+
+  #header-mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #header-mobile img {
+    height: 3rem;
+    margin: 0 2rem;
+  }
+
+  /* Learn section styles */
+
+  #learn {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  #learn h2 {
+    padding-top: 2rem;
+    padding-left: 1rem;
+  }
+
+  #learn .container-right p {
+    margin-left: 2rem;
+  }
+
+  #start-button:hover {
+    padding: .5rem 4rem;
+    font-size: 1.2rem;
+  }
+
+  /* Info styles */
+
+  #info {
+    margin-top: 4rem;
+  }
+
+  .side-bar-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .side-bar-item img {
+    padding-top: 1rem;
+  }
+
+  .side-bar-text {
+    padding-top: 1rem;
+  }
+
+  /* Course gallery styles */
+
+  #courses-mobile h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  #courses-mobile nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  #courses-mobile li {
+    display: block;
+    padding: 1.5rem 0;
+    border: .5px solid #7486A9;
+    background-color: #F6F8FD;
+    margin: .8rem 2rem;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  /* Thesis styles */
+
+  #thesis h2 {
+    margin-bottom: 3rem;
+  }
+
+  #thesis h3 {
+    display: flex;
+    justify-content: center;
+  }
+
+  #thesis p {
+    margin: 0 2rem;
+    text-align: center;
+  }
+
+  /* Footer */
+
+  footer {
+    display: flex;
+    justify-content: center;
+  }
 }

@@ -10,7 +10,8 @@
 </head>
 
 <body>
-  <header>
+  <!-- Full screen header, will be removed for mobile devices -->
+  <header class="full-screen">
     <div id="branding">
       <img id="logo" src="resources/images/ic-logo.svg" alt="logo">
       <h1>Colmar<span id="logo-contrast">Academy</h1>
@@ -24,6 +25,13 @@
       </ul>
     </nav>
   </header>
+  <!--  Mobile header  -->
+  <header id="header-mobile" class="mobile">
+    <img src="resources/images/ic-logo.svg" alt="logo"></a>
+    <img src="resources/images/ic-on-campus.svg" alt="campus button">
+    <img src="resources/images/ic-online.svg" alt="online button">
+    <img src="resources/images/ic-login.svg" alt="log-in button">
+  </header>
   <section id="learn">
     <div class="container-left">
       <img src="resources/images/banner.jpg" alt="Women Studying">
@@ -34,8 +42,9 @@
       <span id="start-button"><a href="start-here.html">Start here</a></span>
     </div>
   </section>
+  <!-- This section will be removed for mobile devices with class=full-screen -->
   <section id="info">
-    <div class="container-left">
+    <div class="container-left full-screen">
       <img src="resources/images/information-main.jpg" alt="Man Reading">
       <h2>It doesn't hurt to keep practicing</h2>
       <blockquote>"Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur aliquet quam id dui posuere blandit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."</blockquote>
@@ -43,7 +52,7 @@
     </div>
     <div class="container-right">
       <div class="side-bar-item">
-        <div class="thumbnail-img">
+        <div class="thumbnail-img full-screen">
           <img src="resources/images/information-orientation.jpg" alt="Cobblestone Road">
         </div>
         <img class="mobile" src="resources/images/information-orientation-mobile.jpg" alt="Cobblestone Road">
@@ -54,12 +63,10 @@
         </div>
       </div>
       <div class="side-bar-item">
-        <div class="thumbnail-img">
+        <div class="thumbnail-img full-screen">
           <img src="resources/images/information-campus.jpg" alt="Room With Map">
         </div>
-        <div class="medium">
           <img class="mobile" src="resources/images/information-campus-mobile.jpg" alt="Room With Map">
-        </div>
         <div class="side-bar-text">
           <h3>Our campus</h3>
           <p>Find which campus is close to you</p>
@@ -67,7 +74,7 @@
         </div>
       </div>
       <div class="side-bar-item">
-        <div class="thumbnail-img">
+        <div class="thumbnail-img full-screen">
           <img src="resources/images/information-guest-lecture.jpg" alt="Old Man With Glasses">
         </div>
         <img class="mobile" src="resources/images/information-guest-lecture-mobile.jpg" alt="Old Man With Glasses">
@@ -79,7 +86,8 @@
       </div>
     </div>
   </section>
-  <section id="courses">
+  <section id="courses" class="full-screen">
+    <!-- This section will be removed for mobile devices with class=full-screen -->
     <h2>Start learning</h2>
     <div id="course-gallery">
       <div id="row-1">
@@ -124,6 +132,20 @@
       </div>
     </div>
   </section>
+  <!-- Mobile course gallery -->
+  <section id="courses-mobile" class="mobile">
+    <h2>Start Learning</h2>
+    <nav>
+      <ul>
+        <li>Software engineering</li>
+        <li>Computer art</li>
+        <li>Design</li>
+        <li>Data</li>
+        <li>Business</li>
+        <li>Marketing</li>
+      </ul>
+    </nav>
+  </section>
   <section id="thesis">
     <h2>Thesis exhibit</h2>
     <div id="thesis-content">
@@ -132,7 +154,8 @@
         <h3>Reimagine urban</h3>
         <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
-      <div class="container-right">
+      <!-- This section will be removed for mobile devices with class=full-screen -->
+      <div class="container-right full-screen">
         <div class="side-bar-item">
           <div class="thumbnail-img">
             <img src="resources/images/thesis-fisma.jpg" alt="Person Drawing">
@@ -155,7 +178,7 @@
   </section>
   <footer>
     <p>&copy; 2016 Colmar Academy. All rights reserved</p>
-    <ul>
+    <ul class="full-screen">
       <li><a href="terms.html">Terms</a></li>
       <li><a href="privacy.html">Privacy</a></li>
     </ul>
